@@ -22,7 +22,7 @@
 #let left_column_size = 25%
 #let grid_column_gutter = 8pt
 
-#let main_color = rgb(147, 14, 14)
+#let main_color = rgb("#3873b2")
 #let heading_color = main_color
 // #let job_color = rgb("#737373")
 #let familyname_color = rgb("#737373")
