@@ -116,45 +116,6 @@
       // Title row.
       #block(text(weight: 400, 1.5em, title, style: "italic", fill: familyname_color))
   ]
-  // grid(
-  //   columns: (1fr, 1fr),
-  //   box[
-  //     // Author information.
-  //     #text([#author], weight: 400, 2.5em)
-  //     
-  //     #v(-1.2em)
-  //
-  //     #line(length:100%)
-  //   
-  //     // Title row.
-  //     #block(text(weight: 400, 1.5em, title, style: "italic", fill: job_color))
-  //   ],
-  //   align(right + top)[
-  //     // Contact information
-  //     #set block(below: 0.5em)
-  //
-  //     #if github != "" {
-  //       align(top)[
-  //         #box(height: 1em, baseline: 20%)[#pad(right: 0.4em)[#image("icons/github.svg")]]
-  //         #link("https://github.com/" + github)[#github]
-  //       ]
-  //     }
-  //
-  //     #if phone != "" {
-  //       align(top)[
-  //         #box(height: 1em, baseline: 20%)[#pad(right: 0.4em)[#image("icons/phone-solid.svg")]]
-  //         #link("tel:" + phone)[#phone]
-  //       ]
-  //     }
-  //
-  //     #if email != "" {
-  //       align(top)[
-  //         #box(height: 1em, baseline: 20%)[#pad(right: 0.4em)[#image("icons/envelope-regular.svg")]]
-  //         #link("mailto:" + email)
-  //       ]
-  //     }
-  //   ]
-  // )
 
   // Main body.
   set par(justify: true, leading: 0.5em)
