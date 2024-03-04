@@ -46,7 +46,8 @@
   let author = firstname + familyname
   set document(author: author, title: title)
   set page(
-    numbering: none, 
+    numbering: "1/1", 
+    margin: (top: 1.5cm, left: 2cm, right: 2cm),
     footer: [
       #set block(below: 0.5em)
 
@@ -107,15 +108,17 @@
 
   align(right+top)[
       // Author information.
-      #text([#text(firstname, fill: firstname_color) #text(familyname, fill: familyname_color)], weight: 400, 2.5em)
+      #text([#text(firstname, fill: firstname_color) #text(familyname, fill: familyname_color)], weight: 400, 3.4em)
       
-      #v(-2.3em)
+      #v(-3.2em)
 
       #line(length:100%, stroke: firstname_color)
     
       // Title row.
       #block(text(weight: 400, 1.5em, title, style: "italic", fill: familyname_color))
   ]
+  
+  v(3em)
 
   // Main body.
   set par(justify: true, leading: 0.5em)

@@ -49,6 +49,7 @@
     )
   ]
 )
+#v(-1.5em)
 
 #hide(
 bibliography(
