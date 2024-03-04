@@ -97,26 +97,31 @@ bibliography(
 = Technical Experience
 
 #cvcol[
-  ===  Programming Languages
+  ===  Programming Languages and Frameworks
 
   #grid(
     columns: (1fr, 1fr),
     row-gutter: 0.5em,
     [- Rust],
     [- Python],
+    [- GLSL],
+    [- CUDA],
+    [- Vulkan],
     [- C],
     [- C++],
   )
 ]
 
 #cvcol[
+  #box[
   === Projects
-
+  
   - #textit("Hephaestus-jit") Just In Time Compiler (JIT) for Vulkan, inspired by Dr.Jit. 
     Implemented with own render graph solution.
     Includes cooperative matrix multiplication (KHR) and a port of tiny-cuda-nn in GLSL.
   - #textit("Vulkan-rt") Path tracer written in Rust using the screen-13 library. It supports the Disney BSDF with Next Event Estimation.
   - #textit("Large Steps in Mitsuba3")  Implementation of the Large Steps in Inverse Rendering paper in Mitsuba3 using PyTorch Integration.
+  ]
 ]
 
 = Languages
