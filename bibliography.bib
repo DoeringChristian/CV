@@ -1,7 +1,36 @@
-@inproceedings{coomans2024realtime,
+@article{coomans2024realtime,
+    author = {Coomans, Arno and Dominci, Edoardo A. and Döring, Christian and
+              Mueller, Joerg H. and Hladky, Jozef and Steinberger, Markus},
     title = {Real-time Neural Rendering of Dynamic Light Fields},
-    author = {Arno Coomans, Edoardo A. Dominci, Christian Döring, Joerg H.
-              Mueller, Jozef Hladky, Markus Steinberger },
-    year = {2024},
-    booktitle = {TBA},
+    journal = {Computer Graphics Forum},
+    volume = {n/a},
+    number = {n/a},
+    pages = {e15014},
+    keywords = {CCS Concepts, • Computing methodologies → Ray tracing, Neural
+                networks},
+    doi = {https://doi.org/10.1111/cgf.15014},
+    url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.15014},
+    eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/cgf.15014},
+    abstract = {Abstract Synthesising high-quality views of dynamic scenes via
+                path tracing is prohibitively expensive. Although caching
+                offline-quality global illumination in neural networks alleviates
+                this issue, existing neural view synthesis methods are limited to
+                mainly static scenes, have low inference performance or do not
+                integrate well with existing rendering paradigms. We propose a
+                novel neural method that is able to capture a dynamic light field
+                , renders at real-time frame rates at 1920× resolution and
+                integrates seamlessly with Monte Carlo ray tracing frameworks. We
+                demonstrate how a combination of spatial, temporal and a novel
+                surface-space encoding are each effective at capturing different
+                kinds of spatio-temporal signals. Together with a compact
+                fully-fused neural network and architectural improvements, we
+                achieve a twenty-fold increase in network inference speed
+                compared to related methods at equal or better quality. Our
+                approach is suitable for providing offline-quality real-time
+                rendering in a variety of scenarios, such as free-viewpoint video
+                , interactive multi-view rendering, or streaming rendering.
+                Finally, our work can be integrated into other rendering
+                paradigms, e.g., providing a dynamic background for interactive
+                scenarios where the foreground is rendered with traditional
+                methods.},
 }
