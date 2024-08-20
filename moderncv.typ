@@ -199,3 +199,34 @@
 #let textit(content) = (
   text(content, style: "italic")
 )
+
+#let cvpub(
+  description,
+  title: "",
+  authors: [],
+  venue: "",
+) = cvgrid(
+  align(center, []),
+  [
+    == #title
+    
+    #authors
+
+    #venue
+  ],
+  [],
+  description
+)
+
+#let cvproject(
+  title: "",
+  description,
+) = cvgrid(
+  [],
+  [
+    == #title
+    #description
+  ]
+)
+
+

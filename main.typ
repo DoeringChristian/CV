@@ -12,10 +12,10 @@
 = Education
 
 #cventry(
-  start: (month: "September", year: 2011),
-  end: (month: "June", year: 2019),
-  role: "Abitur (A-Levels)",
-  place: "Gymnasium Bruckmühl",
+  start: (month: "April", year: 2023),
+  end: (month: "", year: "present"),
+  role: "M.Sc. Electrical and Computer Engineering",
+  place: "Technical University of Munich",
 )[
 ]
 
@@ -30,44 +30,50 @@
 ]
 
 #cventry(
-  start: (month: "April", year: 2023),
-  end: (month: "", year: "Present"),
-  role: "M.Sc. Electrical and Computer Engineering",
-  place: "Technical University of Munich",
+  start: (month: "September", year: 2011),
+  end: (month: "June", year: 2019),
+  role: "Abitur (A-Levels)",
+  place: "Gymnasium Bruckmühl",
 )[
 ]
 
 = Publications
-
-
-#cvgrid(
-  align(center, datebox(month: "", year: "2024")),
-  [
-    #cite(
-      <coomans2024realtime>, 
-      form: "full",
-    )
-  ]
-)
-#v(-1.5em)
-
-#hide(
-bibliography(
-  "bibliography.bib", 
-  title: none, 
-  full: true,
-  style: "chicago-author-date",
-)
+#cvpub(
+  title: "Real-time Neural Rendering of Dynamic Light Fields",
+  authors: [Arno Coomans , Edoardo A. Dominici, Christian Döring, Joerg H.
+  Mueller, Jozef Hladky, Markus Steinberger ], 
+  venue: "Computer Graphics Formum (EG), 2024",
+  []
 )
 
 = Work Experience
 
 #cventry(
-  start: (month: "July", year: 2017),
-  end: (month: "July", year: 2017),
-  role: "Support",
-  place: "Electronic Theater Controls (ETC), Holzkirchen",
+  start: (month: "April", year: 2024),
+  end: (month: "", year: "present"),
+  role: "Research Working Student",
+  place: "Huawei Technologies",
 )[
+  - Development on Dr.Jit/Mitsuba3
+]
+
+#cventry(
+  start: (month: "August", year: 2023),
+  end: (month: "February", year: 2024),
+  role: "Research Intern",
+  place: "Huawei Technologies",
+)[
+  - Researched Real-time Neural Rendering algorithms
+  - Gained experience with Mitsuba3
+]
+
+#cventry(
+  start: (month: "July", year: 2021),
+  end: (month: "August", year: 2021),
+  role: "Embeded Systems Developer",
+  place: "Aurum GmbH",
+)[
+  - Developed NFC library for STM32 in C
 ]
 
 #cventry(
@@ -79,59 +85,51 @@ bibliography(
 ]
 
 #cventry(
-  start: (month: "July", year: 2021),
-  end: (month: "August", year: 2021),
-  role: "Embeded Systems Developer",
-  place: "Aurum GmbH",
+  start: (month: "July", year: 2017),
+  end: (month: "July", year: 2017),
+  role: "Support",
+  place: "Electronic Theater Controls (ETC), Holzkirchen",
 )[
 ]
 
-#cventry(
-  start: (month: "August", year: 2023),
-  end: (month: "February", year: 2024),
-  role: "Neural Rendering Researcher",
-  place: "Huawei Technologies",
-)[
-]
+= Side Projects
 
-= Technical Experience
-
-#cvcol[
-  ===  Programming Languages and Frameworks
-
-  #grid(
-    columns: (1fr, 1fr),
-    row-gutter: 0.5em,
-    [- Rust],
-    [- Python],
-    [- GLSL],
-    [- CUDA],
-    [- Vulkan],
-    [- C],
-    [- C++],
-  )
-]
-
-#cvcol[
-  #box[
-  === Projects
-  
-  - #textit("Hephaestus-jit") Just In Time Compiler (JIT) for Vulkan, inspired by Dr.Jit. 
+#cvproject(
+  title: "Hephaestus-jit",
+  [
+    Just In Time Compiler (JIT) for Vulkan, inspired by Dr.Jit. 
     Implemented with own render graph solution.
     Includes cooperative matrix multiplication (KHR) and a port of tiny-cuda-nn in GLSL.
-  - #textit("Vulkan-rt") Path tracer written in Rust using the screen-13 library. It supports the Disney BSDF with Next Event Estimation.
-  - #textit("Large Steps in Mitsuba3")  Implementation of the Large Steps in Inverse Rendering paper in Mitsuba3 using PyTorch Integration.
   ]
-]
-
-= Languages
-
-#cvlanguage(
-  language: "German",
-  certificate: "Mother tongue"
+)
+#cvproject(
+  title: "Vulkan-rt",
+  [
+    Path tracer written in Rust using the screen-13 library. It supports the Disney BSDF with Next Event Estimation.   
+  ]
+)
+#cvproject(
+  title: "Mitsuba3 Experiments",
+  [
+    Implementation of forward and Differentiable path tracing algorithms in
+    Mitsuba3, such as #textit("ReSTIR GI") and #textit("Large Steps in Inverse Rendering"). 
+  ]
 )
 
-#cvlanguage(
-  language: "English",
-  certificate: "B2+/C1 Abitur"
+= Skills
+
+#grid(
+  columns: (left_column_size, 1fr, 0.5fr, 1fr),
+  column-gutter: grid_column_gutter,
+  row-gutter: 1em,
+  align(right, [Programming]), [
+    - *Rust*, C/C++
+    - *Vulkan*, CUDA
+    - *Python*, Lua
+    - LaTeX, Typst
+  ],
+  align(right, [Languages]), [
+    - German (native)
+    - *English* (fluent B2+/C1)
+  ],
 )
