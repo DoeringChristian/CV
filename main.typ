@@ -43,7 +43,8 @@
   authors: [Arno Coomans , Edoardo A. Dominici, Christian Döring, Joerg H.
   Mueller, Jozef Hladky, Markus Steinberger ], 
   venue: "Computer Graphics Formum (EG), 2024",
-  []
+  project: "https://arnocoomans.be/eg2024/",
+  paper: "https://doi.org/10.1111/cgf.15014",
 )
 
 = Work Experience
@@ -96,6 +97,7 @@
 
 #cvproject(
   title: "Hephaestus-jit",
+  git: "https://github.com/doeringchristian/hephaestus-jit",
   [
     Just In Time Compiler (JIT) for Vulkan, inspired by Dr.Jit. 
     Implemented with own render graph solution.
@@ -104,6 +106,7 @@
 )
 #cvproject(
   title: "Vulkan-rt",
+  git: "https://github.com/DoeringChristian/vulkan-rt",
   [
     Path tracer written in Rust using the screen-13 library. It supports the Disney BSDF with Next Event Estimation.   
   ]
@@ -111,9 +114,10 @@
 #cvproject(
   title: "Mitsuba3 Experiments",
   [
-    Implementation of forward and Differentiable path tracing algorithms in
-    Mitsuba3, such as #textit("ReSTIR GI") and #textit("Large Steps in Inverse Rendering"). 
-  ]
+    Implementation of forward and Differentiable path tracing algorithms in Mitsuba3, such as
+    #link("https://github.com/DoeringChristian/restirgi")[#textit("ReSTIR GI")]
+    and
+    #link("https://github.com/mitsuba-renderer/mitsuba3/discussions/600")[#textit("Large Steps in Inverse Rendering")]. ]
 )
 
 = Skills

@@ -200,11 +200,54 @@
   text(content, style: "italic")
 )
 
+
+// Link Definitions:
+
+#let iconlink(
+  icon: "",
+  url: "",
+  linktext: [],
+) = [
+  #box[
+    #pad(right: 0.5em)[
+      #box(height: 1em, baseline: 20%)[#image("icons/" + icon + ".svg")]
+      #link(url, linktext)
+    ]
+  ]
+]
+
+#let sourcelink(
+  url,
+) = iconlink(
+  icon: "git-alt-brands-solid",
+  url: url,
+  linktext: "Source",
+)
+
+#let projectlink(
+  url,
+) = iconlink(
+  icon: "file-lines-solid",
+  url: url,
+  linktext: "Project",
+)
+
+#let paperlink(
+  url,
+) = iconlink(
+  icon: "file-pdf-solid",
+  url: url,
+  linktext: "Paper",
+)
+
+
 #let cvpub(
-  description,
   title: "",
   authors: [],
   venue: "",
+  icons: [],
+  project: "",
+  paper: "",
 ) = cvgrid(
   align(center, []),
   [
@@ -212,21 +255,32 @@
     
     #authors
 
-    #venue
+    #if venue != "" {
+      [#venue]
+    }
+
+    #if project != "" {
+      [#projectlink(project)]
+    }
+    #if paper != "" {
+      [#paperlink(paper)]
+    }
   ],
-  [],
-  description
 )
 
 #let cvproject(
   title: "",
+  git: "",
   description,
 ) = cvgrid(
   [],
   [
     == #title
     #description
+    
+    #if git != "" {
+      [#sourcelink(git)]
+    }
   ]
 )
-
 
