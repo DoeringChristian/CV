@@ -114,7 +114,7 @@
 #cvproject(
   title: "Mitsuba3 Experiments",
   [
-    Implementation of forward and Differentiable path tracing algorithms in Mitsuba3, such as
+    Implementation of forward and differentiable path tracing algorithms in Mitsuba3, such as
     #link("https://github.com/DoeringChristian/restirgi")[#textit("ReSTIR GI")]
     and
     #link("https://github.com/mitsuba-renderer/mitsuba3/discussions/600")[#textit("Large Steps in Inverse Rendering")]. ]
