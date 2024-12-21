@@ -46,18 +46,18 @@
 ]
 
 #cventry(
-  start: (month: "July", year: 2021), end: (month: "August", year: 2021), role: "Embeded Systems Developer", place: "Aurum GmbH",
+  start: (month: "July", year: 2021), end: (month: "August", year: 2021), role: "Embeded Systems Intern", place: "Aurum GmbH",
 )[
   - Developed NFC library for STM32 in C
 ]
 
 #cventry(
-  start: (month: "July", year: 2017), end: (month: "July", year: 2017), role: "Embeded systems development", place: "Lauterbach GmbH",
+  start: (month: "July", year: 2017), end: (month: "July", year: 2017), role: "Intern", place: "Lauterbach GmbH",
 )[
 ]
 
 #cventry(
-  start: (month: "July", year: 2017), end: (month: "July", year: 2017), role: "Support", place: "Electronic Theater Controls (ETC), Holzkirchen",
+  start: (month: "July", year: 2017), end: (month: "July", year: 2017), role: "Intern", place: "Electronic Theater Controls (ETC), Holzkirchen",
 )[
 ]
 
@@ -100,6 +100,6 @@
     - LaTeX, Typst
   ], align(right, [Languages]), [
     - German (native)
-    - *English* (fluent B2+/C1)
+    - *English* (fluent B2+/C1 from Abitur)
   ],
 )
