@@ -100,6 +100,6 @@
     - LaTeX, Typst
   ], align(right, [Languages]), [
     - German (native)
-    - *English* (fluent B2+/C1 from Abitur)
+    - *English* (fluent B2+/C1)
   ],
 )
