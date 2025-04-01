@@ -33,7 +33,7 @@
 = Work Experience
 
 #cventry(
-  start: (month: "April", year: 2024), end: (month: "", year: "present"), role: "Research Working Student", place: "Huawei Technologies",
+  start: (month: "April", year: 2024), end: (month: "April", year: 2025), role: "Research Working Student", place: "Huawei Technologies",
 )[
   - Development on Dr.Jit/Mitsuba3
 ]
