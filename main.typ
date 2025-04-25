@@ -33,6 +33,13 @@
 = Work Experience
 
 #cventry(
+  start: (month: "April", year: 2025), end: (month: "", year: "present"), role: "Research Intern", place: "NVIDIA Switzerland",
+)[
+  - Differentiable Rendering
+  - Development on Dr.Jit/Mitsuba3
+]
+
+#cventry(
   start: (month: "April", year: 2024), end: (month: "April", year: 2025), role: "Research Working Student", place: "Huawei Technologies",
 )[
   - Development on Dr.Jit/Mitsuba3
@@ -60,8 +67,6 @@
   start: (month: "July", year: 2017), end: (month: "July", year: 2017), role: "Intern", place: "Electronic Theater Controls (ETC), Holzkirchen",
 )[
 ]
-
-#pagebreak()
 
 = Side Projects
 
