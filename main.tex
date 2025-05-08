@@ -1,0 +1,132 @@
+
+\documentclass[11pt a4paper, sans]{moderncv}
+
+\moderncvstyle [symbols]{classic}
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+% \usepackage{hyperref}
+\usepackage{fontawesome5}
+
+\name{Christian}{Döring}
+\title{Graduate Student}
+% \born{22.03.2001}
+\email{doeringc2001@gmail.com}
+\homepage{doeringc.de}
+\social[github]{doeringchristian}
+\social[orcid]{0009-0007-4763-8748}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+
+\cventry{2023--present}{M.Sc. Electrical and Computer Engineering}{Technical University of Munich}{}{}{}
+\cventry{2019--2023}{B.Sc. Electrical and Computer Engineering}{Technical University of Munich}{}{}{
+	Thesis Title: Evaluation of Differentiable Inverse Rendering using Multi-View
+	RGB Data
+}
+\cventry{2011--2019}{Abitur (A-Levels)}{Gymnasium Bruckmühl}{}{}{}
+
+\section{Publications}
+
+\cvitem{2024}{
+	\textbf{Real-time Neural Rendering of Dynamic Light Fields}
+	\newline
+	Arno Coomans,
+	Edoardo A. Dominici,
+	Christian Döring,
+	Joerg H. Mueller,
+	Jozef Hladky,
+	Markus Steinberger
+	\newline
+	\href{https://arnocoomans.be/eg2024/}{\faFile* Project}
+	\href{https://doi.org/10.1111/cgf.15014}{\faFilePdf In Computer Graphics Formum (EG), 2024}
+}
+
+\section{Work Experience}
+
+\cvitem{2025}{
+	\textbf{Research Intern}
+	\textit{NVIDIA}, Zurich
+	\begin{itemize}
+		\item Differentiable Rendering
+		\item Development on Dr.Jit/Mitsuba3
+	\end{itemize}
+}
+\cvitem{2024-2025}{
+	\textbf{Research Working Student} \textit{Huawei Technologies}, Munich
+	\begin{itemize}
+		\item Development on Dr.Jit/Mitsuba3
+		\item Real-time Neural Rendering Research
+	\end{itemize}
+}
+\cvitem{2023-2024}{
+	\textbf{Research Intern} \textit{Huawei Technologies}, Munich
+	\begin{itemize}
+		\item Real-time Neural Rendering Research
+	\end{itemize}
+}
+\cvitem{2021}{
+	\textbf{Embeded Systems Intern} \textit{Aurum GmbH}, Munich
+	\begin{itemize}
+		\item Developed NFC library for STM32 in C
+	\end{itemize}
+}
+\cvitem{2017}{
+	\textbf{Intern} \textit{Lauterbach GmbH}
+}
+\cvitem{2017}{
+	\textbf{Intern} \textit{Electronic Theater Controls (ETC)}, Holzkirchen
+}
+
+\section{Side Projects}
+
+\cvitem{}{
+	\textbf{Hephaestus},
+	Just In Time Compiler (JIT) for Vulkan, inspired by Dr.Jit. Implemented with own
+	render graph solution. Includes cooperative matrix multiplication (KHR) and a
+	port of tiny-cuda-nn in GLSL.
+	\newline
+	\href{https://github.com/doeringchristian/hephaestus-jit}{\faGit* Source}
+}
+\cvitem{}{
+	\textbf{Vulkan Path Tracer},
+	Path tracer written in Rust using the screen-13 library. It supports the Disney
+	BSDF with Next Event Estimation.
+	\newline
+	\href{https://github.com/DoeringChristian/vulkan-rt}{\faGit* Source}
+}
+\cvitem{}{
+	\textbf{Mitsuba3 Experiments},
+	Implementation of forward and differentiable path tracing algorithms in
+	Mitsuba3, such as
+	\href{https://github.com/DoeringChristian/restirgi}{ReSTIR GI} and
+	\href{https://github.com/mitsuba-renderer/mitsuba3/discussions/600}{Large
+		Steps in Inverse Rendering}
+}
+
+\section{Skills}
+
+\cvdoubleitem{Programming:}{
+	\begin{itemize}
+		\item \textbf{Rust}, C/C++
+		\item \textbf{Vulkan}, CUDA
+		\item \textbf{Python}, Lua
+		\item \textbf{LaTeX}, Typst
+	\end{itemize}
+}
+{Languages:}{
+	\begin{itemize}
+		\item \textbf{German} (native)
+		\item English (fluent B2+/C1)
+	\end{itemize}
+}
+
+
+\end{document}
