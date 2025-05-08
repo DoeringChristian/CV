@@ -1,5 +1,5 @@
 
-\documentclass[11pt a4paper, sans]{moderncv}
+\documentclass[11pt, a4paper, sans]{moderncv}
 
 \moderncvstyle [symbols]{classic}
 
@@ -11,6 +11,24 @@
 \usepackage[utf8]{inputenc}
 % \usepackage{hyperref}
 \usepackage{fontawesome5}
+
+\geometry{scale=0.8}
+\setlength{\hintscolumnwidth}{4cm}
+\setlength{\separatorcolumnwidth}{0.05\textwidth}
+
+% https://tex.stackexchange.com/questions/310612/moderncv-date-year-on-top-month
+\usepackage{datetime}
+\def\dates[#1.#2-#3.#4]{\makebox[\hintscolumnwidth][c]{\yearabove{#1}{#2} -- \yearabove{#3}{#4}}}
+\def\date[#1.#2]{\makebox[\hintscolumnwidth][c]{\yearabove{#1}{#2}}}
+\newcommand{\yearabove}[2]{\parbox[t]{10mm}{\centering{#2\par\vspace{-2mm} \tiny{#1}}}}
+
+% \makeatletter
+% \renewcommand*{\cvitem}[2]{%
+%   \cvline{%
+%     \makebox[\hintscolumnwidth][c]{\strut\textcolor{color2}{#1}}%
+%   }{#2}}
+% \makeatother
+
 
 \name{\textcolor{gray}{Christian}}{Döring}
 \title{Graduate Student}
@@ -26,16 +44,25 @@
 
 \section{Education}
 
-\cventry{2023--present}{M.Sc. Electrical and Computer Engineering}{Technical University of Munich}{}{}{}
-\cventry{2019--2023}{B.Sc. Electrical and Computer Engineering}{Technical University of Munich}{}{}{
+\cventry{\dates[April.2023-.present]}
+{M.Sc. Electrical and Computer Engineering}
+{\newline Technical University of Munich}{}{}{}
+
+\cventry{\dates[October.2019-March.2023]}
+{B.Sc. Electrical and Computer Engineering}
+{\newline Technical University of Munich}{}{}
+{
 	Thesis Title: Evaluation of Differentiable Inverse Rendering using Multi-View
 	RGB Data
 }
-\cventry{2011--2019}{Abitur (A-Levels)}{Gymnasium Bruckmühl}{}{}{}
+
+\cventry{\dates[September.2011-June.2019]}
+{Abitur (A-Levels)}
+{Gymnasium Bruckmühl}{}{}{}
 
 \section{Publications}
 
-\cvitem{2024}{
+\cvitem{\date[.2024]}{
 	\textbf{Real-time Neural Rendering of Dynamic Light Fields}
 	\newline
 	Arno Coomans,
@@ -45,13 +72,13 @@
 	Jozef Hladky,
 	Markus Steinberger
 	\newline
-	\href{https://arnocoomans.be/eg2024/}{\faFile* Project}
-	\href{https://doi.org/10.1111/cgf.15014}{\faFilePdf In Computer Graphics Formum (EG), 2024}
+	\href{https://arnocoomans.be/eg2024/}{\faFile* Project} \hspace{1cm}
+	\href{https://doi.org/10.1111/cgf.15014}{\faFilePdf \hspace{1pt} In Computer Graphics Formum (EG), 2024}
 }
 
 \section{Work Experience}
 
-\cvitem{2025}{
+\cvitem{\dates[April.2025-.present]} {
 	\textbf{Research Intern}
 	\textit{NVIDIA}, Zurich
 	\begin{itemize}
@@ -59,29 +86,29 @@
 		\item Development on Dr.Jit/Mitsuba3
 	\end{itemize}
 }
-\cvitem{2024-2025}{
+\cvitem{\dates[April.2024-April.2025]} {
 	\textbf{Research Working Student} \textit{Huawei Technologies}, Munich
 	\begin{itemize}
 		\item Development on Dr.Jit/Mitsuba3
 		\item Real-time Neural Rendering Research
 	\end{itemize}
 }
-\cvitem{2023-2024}{
+\cvitem{\dates[August.2023-February.2024]} {
 	\textbf{Research Intern} \textit{Huawei Technologies}, Munich
 	\begin{itemize}
 		\item Real-time Neural Rendering Research
 	\end{itemize}
 }
-\cvitem{2021}{
+\cvitem{\dates[July.2021-August.2021]} {
 	\textbf{Embeded Systems Intern} \textit{Aurum GmbH}, Munich
 	\begin{itemize}
 		\item Developed NFC library for STM32 in C
 	\end{itemize}
 }
-\cvitem{2017}{
+\cvitem{\date[July.2017]} {
 	\textbf{Intern} \textit{Lauterbach GmbH}
 }
-\cvitem{2017}{
+\cvitem{\date[July.2017]} {
 	\textbf{Intern} \textit{Electronic Theater Controls (ETC)}, Holzkirchen
 }
 
