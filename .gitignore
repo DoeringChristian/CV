@@ -4,3 +4,4 @@
 *.out
 *.dvi
 *.log
+.direnv/
